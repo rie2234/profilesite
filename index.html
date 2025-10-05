@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rie's Profile - プロフェッショナルアナウンサー</title>
-<meta name="description" content="プロフェッショナルアナウンサー・司会者 Rie のポートフォリオサイト。テレビ番組、イベント司会、ナレーションなど幅広い分野での実績をご紹介します。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/sanitize.css">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rie's Profile - プロフェッショナルアナウンサー</title>
+        <meta name="description" content="プロフェッショナルアナウンサー・司会者 Rie のポートフォリオサイト。">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 <body>
     <!-- トップナビゲーション -->
     <nav class="top-nav">
@@ -25,38 +24,11 @@
             <div class="nav-section">
                 <div class="nav-section-title">Navigation</div>
                 <ul class="nav-links">
-                    <li><a href="#" class="active" onclick="showPage('home')">ホーム</a></li>
-                    <li>
-                        <a href="#" onclick="showPage('bio')">プロフィール</a>
-                        <ul class="sub-nav">
-                            <li><a href="#" onclick="scrollToSection('bio-profile')">経歴</a></li>
-                            <li><a href="#" onclick="scrollToSection('bio-skills')">スキル</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onclick="showPage('portfolio')">実績</a>
-                        <ul class="sub-nav">
-                            <li><a href="#" onclick="scrollToSection('tv-work')">テレビ</a></li>
-                            <li><a href="#" onclick="scrollToSection('event-work')">イベント</a></li>
-                            <li><a href="#" onclick="scrollToSection('narration-work')">ナレーション</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" onclick="showPage('photos')">フォトギャラリー</a></li>
+                    <li><a href="#" class="active" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('portfolio')">Career</a></li>
+                    <li><a href="#" onclick="showPage('photos')">Gallery</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
                 </ul>
-            </div>
-
-            <div class="nav-section">
-                <div class="nav-section-title">Contact</div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="toggleContact()" class="contact-toggle">💬 Contact</a></li>
-                </ul>
-                <!-- コンタクト展開エリア -->
-                <div class="contact-expandable" id="contact-expandable">
-                    <div class="contact-email-icon" onclick="openMail()">
-                        <span class="email-icon">📧</span>
-                        <span class="email-text">Email</span>
-                    </div>
-                </div>
             </div>
         </aside>
 
@@ -66,374 +38,306 @@
             <div id="home" class="page active">
                 <section class="hero fade-in">
                     <div class="hero-content">
-                        <div class="hero-image">🎤</div>
+                        <div class="hero-image">
+                            <img src="assets/images/profile.jpg" alt="Rie プロフィール写真">
+                        </div>
                         <h1>Rie</h1>
                         <p class="subtitle">プロフェッショナルアナウンサー・司会者</p>
-                        <a href="#" class="hero-cta" onclick="showPage('portfolio')">実績を見る</a>
                     </div>
                 </section>
             </div>
 
-            <!-- プロフィールページ -->
-            <div id="bio" class="page">
-                <div class="content-section fade-in">
-                    <h2 class="section-title" id="bio-profile">プロフィール</h2>
-                    <div class="bio-content">
-                        <div class="bio-image">👩‍💼</div>
-                        <div class="bio-text">
-                            <p>放送業界で10年以上の経験を持つプロフェッショナルアナウンサー・司会者として活動しています。テレビ番組での司会進行、企業イベント、結婚式司会など、多岐にわたる分野で実績を重ねてきました。</p>
-                            <p>視聴者やお客様に寄り添い、その場の雰囲気を大切にした心温まる進行を心がけています。どんなシーンでも、皆様に心地よい時間をお過ごしいただけるよう、丁寧で温かみのある司会進行を提供いたします。</p>
-                        </div>
-                    </div>
-
-                    <h2 class="section-title" id="bio-skills">専門スキル</h2>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <h4>テレビ番組司会</h4>
-                            <p>情報番組・バラエティ番組での司会進行</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>イベント司会</h4>
-                            <p>企業イベント・セミナーでの司会進行</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>結婚式司会</h4>
-                            <p>お二人らしさを大切にした司会</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>ナレーション</h4>
-                            <p>CM・VP・ドキュメンタリー</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>リポート</h4>
-                            <p>現場からの中継リポート</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>多言語対応</h4>
-                            <p>英語での司会進行も対応可能</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- 実績ページ -->
+                        
             <div id="portfolio" class="page">
                 <div class="content-section fade-in">
-                    <h2 class="section-title">実績・作品</h2>
-                </div>
-                
-                <div class="portfolio-grid slide-in">
-                    <div class="portfolio-item" id="tv-work">
-                        <div class="portfolio-image">📺</div>
-                        <div class="portfolio-content">
-                            <h3>テレビ番組司会</h3>
-                            <p>朝の情報番組のメインキャスターとして3年間出演。視聴者に寄り添う温かな進行で高い評価をいただきました。</p>
+                    <h2 class="section-title">Career</h2>
+                    
+                    <!-- Media & Stage Appearance -->
+                    <div class="portfolio-section">
+                        <h3 class="portfolio-section-title">Media & Stage Appearance</h3>
+                        <p class="portfolio-section-subtitle">メディア・ステージ出演実績</p>
+                        
+                        <div class="portfolio-grid">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/tv.jpg" alt="テレビ番組">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>テレビ番組</h4>
+                                    <p>情報番組、バラエティ番組での司会・出演</p>
+                                    <ul class="achievement-list">
+                                        <li>○○情報番組 メインキャスター（20XX-20XX）</li>
+                                        <li>△△バラエティ レギュラー出演</li>
+                                        <li>□□ニュース キャスター</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/event.jpg" alt="イベント司会">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>イベント司会</h4>
+                                    <p>企業イベント、セミナー、カンファレンス</p>
+                                    <ul class="achievement-list">
+                                        <li>大手企業 新商品発表会</li>
+                                        <li>業界カンファレンス 司会進行</li>
+                                        <li>周年記念パーティー MC</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/wedding.jpg" alt="ブライダル司会">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>ブライダル司会</h4>
+                                    <p>結婚式・披露宴の司会進行</p>
+                                    <ul class="achievement-list">
+                                        <li>ホテル挙式 年間40組以上担当</li>
+                                        <li>ガーデンウェディング司会</li>
+                                        <li>少人数婚 アットホーム進行</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/narration.jpg" alt="ナレーション">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>ナレーション</h4>
+                                    <p>CM、VP、ドキュメンタリー</p>
+                                    <ul class="achievement-list">
+                                        <li>テレビCM ナレーション</li>
+                                        <li>企業VP 音声収録</li>
+                                        <li>ドキュメンタリー番組 ナレーター</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="portfolio-item" id="event-work">
-                        <div class="portfolio-image">🎪</div>
-                        <div class="portfolio-content">
-                            <h3>企業イベント司会</h3>
-                            <p>大手企業の新商品発表会、株主総会、周年記念パーティーなど、格調高い司会進行を数多く担当。</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">💒</div>
-                        <div class="portfolio-content">
-                            <h3>ブライダル司会</h3>
-                            <p>年間40組以上のカップルの特別な日を演出。お二人の個性を活かした オリジナリティ溢れる司会進行。</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" id="narration-work">
-                        <div class="portfolio-image">🎙️</div>
-                        <div class="portfolio-content">
-                            <h3>ナレーション</h3>
-                            <p>テレビCM、企業VP、ドキュメンタリー番組など、幅広いジャンルでの音声表現を担当。</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">🌟</div>
-                        <div class="portfolio-content">
-                            <h3>アワードセレモニー</h3>
-                            <p>業界大手の表彰式やコンテストの司会進行。厳粛な雰囲気と華やかさを両立した進行。</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">🎓</div>
-                        <div class="portfolio-content">
-                            <h3>セミナー・講演会</h3>
-                            <p>教育機関や企業研修での司会進行。参加者が集中できる環境作りを得意としています。</p>
+
+                    <!-- Finance & Legal Support -->
+                    <div class="portfolio-section">
+                        <h3 class="portfolio-section-title">Finance & Legal Support</h3>
+                        <p class="portfolio-section-subtitle">財務法務サポート</p>
+                        
+                        <div class="portfolio-grid">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/finance.jpg" alt="財務サポート">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>財務コンサルティング</h4>
+                                    <p>企業の財務戦略・資金調達支援</p>
+                                    <ul class="achievement-list">
+                                        <li>中小企業 財務改善コンサルティング</li>
+                                        <li>資金調達支援・融資サポート</li>
+                                        <li>財務分析・レポート作成</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/legal.jpg" alt="法務サポート">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>法務サポート</h4>
+                                    <p>契約書作成・リーガルチェック</p>
+                                    <ul class="achievement-list">
+                                        <li>各種契約書のドラフト作成</li>
+                                        <li>契約書レビュー・リーガルチェック</li>
+                                        <li>法務相談・コンプライアンス対応</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/accounting.jpg" alt="会計サポート">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>会計・税務サポート</h4>
+                                    <p>記帳代行・決算書作成支援</p>
+                                    <ul class="achievement-list">
+                                        <li>月次・年次決算サポート</li>
+                                        <li>税務申告書類作成支援</li>
+                                        <li>会計ソフト導入・運用支援</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card-image">
+                                    <img src="assets/images/portfolio/ma.jpg" alt="M&Aサポート">
+                                </div>
+                                <div class="portfolio-card-content">
+                                    <h4>M&Aアドバイザリー</h4>
+                                    <p>企業買収・事業承継支援</p>
+                                    <ul class="achievement-list">
+                                        <li>デューデリジェンス支援</li>
+                                        <li>企業価値評価（バリュエーション）</li>
+                                        <li>事業承継計画策定サポート</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 写真ページ -->
             <div id="photos" class="page">
                 <div class="content-section fade-in">
-                    <h2 class="section-title">フォトギャラリー</h2>
-                    <div class="gallery-projects">
-                        <div class="project-item" onclick="openGallery('tv-photos', 'テレビ番組')">
-                            <div class="project-icon">📺</div>
-                            <h3>テレビ番組</h3>
+                    <h2 class="section-title">Gallery</h2>
+                    
+                    <!-- 自動スクロールスライドショー -->
+                    <div class="slideshow-container">
+                        <div class="slideshow-track" id="slideshow-track">
+                            <!-- 画像が動的に追加されます -->
                         </div>
-                        <div class="project-item" onclick="openGallery('event-photos', 'イベント司会')">
-                            <div class="project-icon">🎪</div>
-                            <h3>イベント司会</h3>
+                    </div>
+                    
+                    <!-- カテゴリー別ギャラリー -->
+                    <div class="gallery-section">
+                        <h3 class="gallery-category-title">Television</h3>
+                        <div class="gallery-grid" data-category="tv">
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/tv-1.jpg" alt="TV出演 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/tv-2.jpg" alt="TV出演 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/tv-3.jpg" alt="TV出演 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/tv-4.jpg" alt="TV出演 4">
+                            </div>
                         </div>
-                        <div class="project-item" onclick="openGallery('wedding-photos', 'ブライダル')">
-                            <div class="project-icon">💒</div>
-                            <h3>ブライダル</h3>
+                    </div>
+            
+                    <div class="gallery-section">
+                        <h3 class="gallery-category-title">Events</h3>
+                        <div class="gallery-grid" data-category="events">
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/event-1.jpg" alt="イベント 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/event-2.jpg" alt="イベント 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/event-3.jpg" alt="イベント 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/event-4.jpg" alt="イベント 4">
+                            </div>
                         </div>
-                        <div class="project-item" onclick="openGallery('portrait-photos', 'ポートレート')">
-                            <div class="project-icon">📸</div>
-                            <h3>ポートレート</h3>
+                    </div>
+            
+                    <div class="gallery-section">
+                        <h3 class="gallery-category-title">Wedding</h3>
+                        <div class="gallery-grid" data-category="wedding">
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/wedding-1.jpg" alt="ブライダル 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/wedding-2.jpg" alt="ブライダル 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/wedding-3.jpg" alt="ブライダル 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/wedding-4.jpg" alt="ブライダル 4">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-section">
+                        <h3 class="gallery-category-title">Portrait</h3>
+                        <div class="gallery-grid" data-category="portrait">
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/portrait-1.jpg" alt="ポートレート 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/portrait-2.jpg" alt="ポートレート 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/portrait-3.jpg" alt="ポートレート 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/images/gallery/portrait-4.jpg" alt="ポートレート 4">
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- ギャラリー詳細パネル -->
-                <div class="gallery-panel" id="gallery-panel">
-                    <div class="gallery-header">
-                        <h3 id="gallery-title">ギャラリー</h3>
-                        <button class="gallery-close" onclick="closeGallery()">✕</button>
+            </div>
+
+            <!-- コンタクトページ -->
+            <div id="contact" class="page">
+                <div class="content-section fade-in">
+                    <h2 class="section-title">Contact</h2>        
+                    <div class="contact-container">
+                        <div class="contact-intro">
+                            <p>お仕事のご依頼・お問い合わせは、以下の方法でお気軽にご連絡ください。</p>
+                        </div>
+                 <!--
+                        <div class="contact-methods">
+                            <div class="contact-card">
+                                <div class="contact-icon">📧</div>
+                                <h3>Email</h3>
+                                <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">📱</div>
+                                <h3>Phone</h3>
+                                <a href="tel:+81-00-0000-0000" class="contact-link">000-0000-0000</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">💼</div>
+                                <h3>Instagram</h3>
+                                <a href="https://instagram.com/youraccount" target="_blank" class="contact-link">@youraccount</a>
+                            </div>
+                        </div>
+                  -->
+                        <div class="contact-form-section">
+                            <h3 class="form-title">Send Message</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">お名前 / Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">メールアドレス / Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">件名 / Subject</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">メッセージ / Message</label>
+                                    <textarea id="message" name="message" rows="6" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">送信 / Send</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="gallery-thumbnails" id="gallery-thumbnails">
-                        <!-- サムネイルが動的に追加される -->
-                    </div>
-                </div>
+                 </div>
             </div>
         </main>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        // ページ切り替え機能
-        function showPage(pageId) {
-            // すべてのページを非表示
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
-
-            // ナビゲーションのアクティブ状態を更新
-            const navLinks = document.querySelectorAll('.nav-links a');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-
-            // 指定されたページを表示
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-                
-                // 対応するナビリンクをアクティブに
-                const activeNavLink = document.querySelector(`[onclick="showPage('${pageId}')"]`);
-                if (activeNavLink) {
-                    activeNavLink.classList.add('active');
-                }
-
-                // アニメーション効果
-                const elements = targetPage.querySelectorAll('.fade-in, .slide-in');
-                elements.forEach((element, index) => {
-                    element.style.opacity = '0';
-                    element.style.transform = element.classList.contains('fade-in') ? 'translateY(50px)' : 'translateX(50px)';
-                    
-                    setTimeout(() => {
-                        element.style.transition = 'opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                        element.style.opacity = '1';
-                        element.style.transform = 'translate(0)';
-                    }, index * 200);
-                });
-            }
-        }
-
-        // セクションへのスクロール機能
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-
-        // コンタクトトグル機能
-        function toggleContact() {
-            const contactExpandable = document.getElementById('contact-expandable');
-            contactExpandable.classList.toggle('active');
-        }
-
-        // メール起動機能
-        function openMail() {
-            window.location.href = 'mailto:rie@example.com?subject=お仕事のご依頼について&body=お疲れ様です。%0D%0A%0D%0Aお仕事のご相談がございまして、ご連絡いたします。%0D%0A%0D%0A【ご依頼内容】%0D%0A%0D%0A【開催日時】%0D%0A%0D%0A【開催場所】%0D%0A%0D%0A【その他ご要望】%0D%0A%0D%0A%0D%0Aお忙しい中恐縮ですが、ご確認のほどよろしくお願いいたします。';
-        }
-
-        // ギャラリーデータ
-        const galleryData = {
-            'tv-photos': [
-                { emoji: '📺', caption: '朝の情報番組 メインキャスター' },
-                { emoji: '🎬', caption: 'バラエティ番組 司会進行' },
-                { emoji: '📻', caption: 'ラジオ番組 パーソナリティ' },
-                { emoji: '🌅', caption: '早朝番組 リポーター' },
-                { emoji: '🎭', caption: 'エンタメ番組 司会' },
-                { emoji: '📰', caption: 'ニュース番組 キャスター' }
-            ],
-            'event-photos': [
-                { emoji: '🏢', caption: '企業創立記念パーティー' },
-                { emoji: '🎊', caption: '新商品発表会 司会' },
-                { emoji: '🏆', caption: '表彰式・授賞式' },
-                { emoji: '🎪', caption: 'ファッションショー司会' },
-                { emoji: '🎨', caption: 'アート展覧会オープニング' },
-                { emoji: '🌟', caption: 'チャリティイベント' }
-            ],
-            'wedding-photos': [
-                { emoji: '💒', caption: 'ガーデンウェディング司会' },
-                { emoji: '👰', caption: '教会式ウェディング' },
-                { emoji: '🌹', caption: 'ローズガーデンセレモニー' },
-                { emoji: '✨', caption: 'ナイトウェディング' },
-                { emoji: '🕊️', caption: 'リゾートウェディング' },
-                { emoji: '💕', caption: '家族婚アットホーム進行' }
-            ],
-            'portrait-photos': [
-                { emoji: '📸', caption: 'プロフィール撮影' },
-                { emoji: '🌸', caption: '桜ロケーション撮影' },
-                { emoji: '🏙️', caption: '都市景観バック' },
-                { emoji: '🌊', caption: '海辺ポートレート' },
-                { emoji: '📚', caption: 'スタジオ撮影' },
-                { emoji: '🍃', caption: '自然光ポートレート' }
-            ]
-        };
-
-        // ギャラリーパネルを開く
-        function openGallery(galleryId, title) {
-            const panel = document.getElementById('gallery-panel');
-            const titleElement = document.getElementById('gallery-title');
-            const thumbnailsContainer = document.getElementById('gallery-thumbnails');
-            
-            titleElement.textContent = title;
-            
-            // サムネイルを生成
-            thumbnailsContainer.innerHTML = '';
-            const photos = galleryData[galleryId] || [];
-            
-            photos.forEach((photo, index) => {
-                const thumbnailDiv = document.createElement('div');
-                thumbnailDiv.className = 'thumbnail-item';
-                thumbnailDiv.innerHTML = `
-                    ${photo.emoji}
-                    <div class="thumbnail-caption">${photo.caption}</div>
-                `;
-                
-                // クリック時のズーム効果
-                thumbnailDiv.addEventListener('click', function() {
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1.02)';
-                    }, 150);
-                });
-                
-                thumbnailsContainer.appendChild(thumbnailDiv);
-            });
-            
-            // パネルを表示
-            panel.classList.add('active');
-        }
-
-        // ギャラリーパネルを閉じる
-        function closeGallery() {
-            const panel = document.getElementById('gallery-panel');
-            panel.classList.remove('active');
-        }
-
-        // スクロール効果
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('.top-nav');
-            if (window.scrollY > 50) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                nav.style.boxShadow = '0 2px 20px rgba(214, 188, 250, 0.15)';
-            } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.9)';
-                nav.style.boxShadow = 'none';
-            }
-        });
-
-        // 初期アニメーション
-        document.addEventListener('DOMContentLoaded', () => {
-            const elements = document.querySelectorAll('.fade-in, .slide-in');
-            elements.forEach((element, index) => {
-                if (element.closest('.page.active')) {
-                    setTimeout(() => {
-                        element.style.opacity = '1';
-                        element.style.transform = 'translate(0)';
-                    }, index * 200);
-                }
-            });
-        });
-
-        // サイドナビゲーションの滑らかなホバー効果
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateX(15px)';
-            });
-            
-            link.addEventListener('mouseleave', function() {
-                if (!this.classList.contains('active')) {
-                    this.style.transform = 'translateX(0)';
-                }
-            });
-        });
-
-        // ポートフォリオアイテムの3D効果
-        document.querySelectorAll('.portfolio-item, .skill-item, .project-item').forEach(item => {
-            item.addEventListener('mousemove', function(e) {
-                const rect = this.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 20;
-                const rotateY = (centerX - x) / 20;
-                
-                this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-15px)`;
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-            });
-        });
-
-        // リップル効果の作成
-        function createRippleEffect(e, element) {
-            const ripple = document.createElement('span');
-            const rect = element.getBoundingClientRect();
-            const size = Math.max(rect.width, rect.height);
-            const x = e.clientX - rect.left - size / 2;
-            const y = e.clientY - rect.top - size / 2;
-            
-            ripple.style.width = ripple.style.height = size + 'px';
-            ripple.style.left = x + 'px';
-            ripple.style.top = y + 'px';
-            ripple.classList.add('ripple');
-            
-            element.appendChild(ripple);
-            
-            setTimeout(() => {
-                ripple.remove();
-            }, 800);
-        }
-
-        // ボタンクリック時のリップル効果
-        document.querySelectorAll('.hero-cta, .nav-links a, .contact-email-icon').forEach(element => {
-            element.addEventListener('click', function(e) {
-                if (!this.querySelector('.ripple')) {
-                    createRippleEffect(e, this);
-                }
-            });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
