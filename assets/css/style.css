@@ -384,6 +384,31 @@ body {
   color: var(--text-dark);
 }
 
+.portfolio-card-image img {
+  width: 150px; /* 幅を小さく設定 */
+  height: 150px; /* 高さを小さく設定 */
+  object-fit: cover; /* アスペクト比を維持しながら四角に収める */
+  border-radius: 0; /* 四角形にする（丸みをなくす） */
+  display: block; /* ブロック要素にして中央揃え */
+  border-radius: 15px; /* 角を丸くする */
+  float: left; /* 左寄せにする */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* シャドウを追加（オプション） */
+}
+.portfolio-card {
+  display: flex;
+  flex-direction: column; /* 子要素を縦並びにする */
+  align-items: center; /* 中央揃えにする */
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+.portfolio-card-image {
+  margin-bottom: 15px; /* 写真と文字の間に余白を追加 */
+}
+
+.portfolio-card-content {
+  padding: 10px; /* テキスト部分に余白を追加 */
+}
+
 /* スライドショーコンテナ */
 .slideshow-container {
   width: 100%;
@@ -749,6 +774,11 @@ body {
   
   .portfolio-card-content h4 {
     font-size: 1.5rem;
+  }
+  
+  .portfolio-card-image img {
+      width: 100%; /* モバイルでは幅を広げる */
+      max-width: 150px; /* 最大幅を小さくする */
   }
   
   .slideshow-item {
