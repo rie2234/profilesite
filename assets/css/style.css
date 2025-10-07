@@ -446,7 +446,7 @@ body {
   z-index: 1; /* 追加 */
 }
 
-.slideshow-trackgit {
+.slideshow-track {
   display: flex;
   gap: 20px;
   animation: scroll 15s linear infinite;
