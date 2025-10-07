@@ -165,7 +165,7 @@ ${message}
             `.trim();
             
             // mailtoリンクを作成
-            const mailtoLink = `mailto:your.email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
+            const mailtoLink = `mailto:rie.sftmoon2234@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
             
             // メーラーを開く
             window.location.href = mailtoLink;

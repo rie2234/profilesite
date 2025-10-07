@@ -1,2 +1,3 @@
 # Macのシステムファイルを無視
-.DS_Store
+.DS_Store.DS_Store
+Library/
