@@ -827,14 +827,11 @@ footer {
   }
 
   footer {
-    position: relative; /* fixed ではなく relative にしてスクロール下に配置 */
-    width: 100%;        /* 親要素いっぱいに広げる */
-    text-align: center; /* 中央揃え */
-    padding: 15px 0;
-    background-color: #f2f2f2;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    left: 0;            /* 念のため左端に揃える */
+    position: relative;   /* 親要素フロー内に配置 */
+    width: 100vw;         /* 画面幅いっぱいに広げる */
+    max-width: 100%;
+    margin: 0;            /* 親要素の余白を無効化 */
+    left: 0;
+    text-align: center;   /* 中央揃え */
   }
 }
-
