@@ -1,300 +1,228 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rie's Profile</title>
-        <meta name="description" content="Rieのポートフォリオサイト">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rie's Profile</title>
+  <meta name="description" content="Rieのポートフォリオサイト">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 <body>
-    <!-- トップナビゲーション -->
-    <nav class="top-nav">
-        <div class="top-nav-container">
-            <a href="#" class="logo" onclick="showPage('home')">Rie</a>
-        </div>
-    </nav>
-
-    <div class="main-container">
-        <!-- サイドナビゲーション -->
-        <aside class="side-nav">
-            <div class="nav-section">
-                <div class="nav-section-title">Navigation</div>
-                <ul class="nav-links">
-                    <li><a href="#" class="active" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('portfolio')">Career</a></li>
-                    <li><a href="#" onclick="showPage('photos')">Gallery</a></li>
-                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- メインコンテンツ -->
-        <main class="main-content">
-            <!-- ホームページ -->
-            <div id="home" class="page active">
-                <section class="hero fade-in">
-                    <div class="hero-content">
-                        <div class="hero-image">
-                            <img src="assets/images/portfolio/profilepic.JPG" alt="Rie プロフィール写真">
-                        </div>
-                        <h1>Rie</h1>
-                        <h3 class="subtitle">フリーランス</h3>
-                            <p class="subtitlep">事務スキルとPR経験を両立した<br>“二刀流キャリア”</p>
-                        </div>
-                </section>
-            </div>
-
-            <!-- 実績ページ -->
-                        
-            <div id="portfolio" class="page">
-                <div class="content-section fade-in">
-                    <h2 class="section-title">Career</h2>
-                    <p class="careerbriefing">金融機関での窓口業務および企業での総務・経理業務を経験。<br>
-                        貯金・融資・共済など幅広い金融サービスの提案・手続きを担当し、<br>顧客満足度向上に貢献。<br>
-                        その後のキャリアでは、経理・総務業務を通じて組織運営を支えつつ、<br>業務の電子化やコスト削減など効率化にも取り組み、経験の幅を広げる。<br>
-                        また、第34代富士娘として御殿場観光イメージガールに就任し、<br>企業・地域イベントやメディア出演の経験も有し、<br>広報・PR面での対応力も備えている。</p>
-                
-                    <!-- Media & Stage Appearance -->
-                    <div class="portfolio-section">
-                        <h3 class="portfolio-section-title">Media & Stage Appearance</h3>
-                        <p class="portfolio-section-subtitle">メディア・ステージ出演実績</p>
-                        
-                        <div class="portfolio-grid">
-  
-                            <div class="portfolio-card">
-                                <div class="portfolio-card-image">
-                                    <img src="assets/images/portfolio/event.jpg" alt="イベント司会">
-                                </div>
-                                <div class="portfolio-card-content">
-                                    <h4>イベント・司会</h4>
-                                    <p>企業イベント、自治体イベント</p>
-                                    <br>
-                                    <ul class="achievement-list">
-                                        <li>恋人の聖地モニュメント除幕式</li>
-                                        <li>第35回富士娘コンテスト 認定証授与式</li>
-                                        <li>クリスマスイベント＆写真撮影</li>
-                                        <li>観光案内所上棟式</li>
-                                        <li>幼児防火・交通安全のつどい</li>
-                                        <li>熱海観光キャンペーン</li>
-                                        <li>マルハンカップ表彰式</li>
-                                        <li>三井住友VISA太平洋マスターズ表彰式</li>
-                                        <br>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="portfolio-card">
-                                <div class="portfolio-card-image">
-                                    <img src="assets/images/portfolio/model.jpg" alt="メディア出演">
-                                </div>
-                                <div class="portfolio-card-content">
-                                    <h4>メディア出演</h4>
-                                    <p>テレビ・ラジオ出演、雑誌モデル</p>
-                                    <br>
-                                    <ul class="achievement-list">
-                                        <li>静岡朝日テレビ「アナRUN+」出演</li>
-                                        <li>広報ごてんば表紙モデル</li>
-                                        <li>富士山GoGoエフエムラジオ出演</li>
-                                        <li>レンブラントプレミアム富士御殿場雑誌モデル[ミクリ]</li>
-                                        <li>第34代富士娘インタビューページ[広報ごてんば]</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Finance &  Administrative　Support -->
-                    <div class="portfolio-section">
-                        <h3 class="portfolio-section-title">Finance & Administrative Support</h3>
-                        <p class="portfolio-section-subtitle">財務・バックオフィスサポート</p> 
-                        <div class="portfolio-grid">
-                            <div class="portfolio-card">
-                                <div class="portfolio-card-content">
-                                    <h4>実務領域</h4>
-                                    <ul class="achievement-list">
-                                        <li>請求書作成・支払処理・帳簿入力</li>
-                                        <li>税務申告書類作成支援</li>                                        
-                                        <li>給与計算・社会保険手続き</li>
-                                        <li>月次・年次決算サポート</li>
-                                        <li>経費精算・現金管理のオンライン化</li>
-                                        <li>会計ソフト導入・運用支援</li>
-                                        <li>財務データ整理・分析</li>                                        
-                                        <li>業務プロセス改善・効率化</li>
-                                        <li>マネープラン作成サポート</li>
-                                        <li>金融商品に関する相談・提案　　他</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="portfolio-card">
-                                <div class="portfolio-card-content">
-                                    <h4>資格・スキル</h4>
-                                    <ul class="achievement-list">
-                                        <li>全国商業高等学校協会主催 電卓実務検定 １級</li>
-                                        <li>全国商業高等学校協会主催 ワープロ実務検定 １級</li>
-                                        <li>全国商業高等学校協会主催 簿記実務検定 １級</li>
-                                        <li>全国商業高等学校協会主催 商業経済検定 １級</li>
-                                        <li>ファイナンシャル・プランニング技能士（個人資産相談業務）３級</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="photos" class="page">
-                <div class="content-section fade-in">
-                    <h2 class="section-title">Gallery</h2>
-                    
-                    <!-- 自動スクロールスライドショー -->
-                    <div class="slideshow-container">
-                        <div class="slideshow-track" id="slideshow-track">
-                            <!-- 画像が動的に追加されます -->
-                        </div>
-                    </div>
-                    
-                    <!-- カテゴリー別ギャラリー -->
-        
-                    <div class="gallery-section">
-                        <h3 class="gallery-category-title">Portrait</h3>
-                        <div class="gallery-grid" data-category="tv">
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/fujimusume34th.jpg" alt="Snap 1">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/atami.jpg" alt="Snap 2">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/rembrandt 2.jpg" alt="Snap 3">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/yukata.JPG" alt="Snap 4">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/riding.HEIC" alt="Snap 5">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/marrychristmas.jpeg" alt="Snap 6">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/tourismassociation.jpg" alt="Snap 7">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/furin2.jpg" alt="Snap 8">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/snap1.JPG" alt="Snap 9">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/portfolio/Gotembaofficialnewsletter.JPG" alt="Snap 10">
-                            </div>
-                        </div>
-                    </div>
-                <!-- 
-                    <div class="gallery-section">
-                        <h3 class="gallery-category-title">Wedding</h3>
-                        <div class="gallery-grid" data-category="wedding">
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/wedding-1.jpg" alt="ブライダル 1">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/wedding-2.jpg" alt="ブライダル 2">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/wedding-3.jpg" alt="ブライダル 3">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/wedding-4.jpg" alt="ブライダル 4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-section">
-                        <h3 class="gallery-category-title">Portrait</h3>
-                        <div class="gallery-grid" data-category="portrait">
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/portrait-1.jpg" alt="ポートレート 1">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/portrait-2.jpg" alt="ポートレート 2">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/portrait-3.jpg" alt="ポートレート 3">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="assets/images/gallery/portrait-4.jpg" alt="ポートレート 4">
-                            </div>
-                        </div>
-                    </div>
-                -->
-                </div>
-            </div>
-
-
-            <!-- コンタクトページ -->
-            <div id="contact" class="page">
-                <div class="content-section fade-in">
-                    <h2 class="section-title">Contact</h2>        
-                    <div class="contact-container">
-                        <div class="contact-intro">
-                            <p>お仕事のご依頼・お問い合わせはこちら。お気軽にご連絡ください。</p>
-                        </div>
-                 <!--
-                        <div class="contact-methods">
-                            <div class="contact-card">
-                                <div class="contact-icon">📧</div>
-                                <h3>Email</h3>
-                                <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
-                            </div>
-                            
-                            <div class="contact-card">
-                                <div class="contact-icon">📱</div>
-                                <h3>Phone</h3>
-                                <a href="tel:+81-00-0000-0000" class="contact-link">000-0000-0000</a>
-                            </div>
-                            
-                            <div class="contact-card">
-                                <div class="contact-icon">💼</div>
-                                <h3>Instagram</h3>
-                                <a href="https://instagram.com/youraccount" target="_blank" class="contact-link">@youraccount</a>
-                            </div>
-                        </div>
-                  -->
-                        <div class="contact-form-section">
-                            <h3 class="form-title">Send Message</h3>
-                            <form class="contact-form" id="contactForm">
-                                <div class="form-group">
-                                    <label for="name">お名前 / Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">メールアドレス / Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="subject">件名 / Subject</label>
-                                    <input type="text" id="subject" name="subject" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="message">メッセージ / Message</label>
-                                    <textarea id="message" name="message" rows="6" required></textarea>
-                                </div>
-                                
-                                <button type="submit" class="submit-btn">送信 / Send</button>
-                            </form>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </main>
+  <!-- トップナビゲーション -->
+  <nav class="top-nav">
+    <div class="top-nav-container">
+      <a href="#" class="logo" onclick="showPage('home')">Rie</a>
     </div>
+  </nav>
 
-    <script src="assets/js/script.js"></script>
+  <div class="main-container">
+    <!-- サイドナビゲーション -->
+    <aside class="side-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Navigation</div>
+        <ul class="nav-links">
+          <li><a href="#" class="active" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('portfolio')">Career</a></li>
+          <li><a href="#" onclick="showPage('photos')">Gallery</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+      
+      <!-- ホーム -->
+      <div id="home" class="page active">
+        <section class="hero fade-in">
+          <div class="hero-content">
+            <div class="hero-image">
+              <img src="assets/images/portfolio/profilepic.JPG" alt="Rie プロフィール写真">
+            </div>
+            <h1>Rie</h1>
+            <h3 class="subtitle">フリーランス</h3>
+            <p class="subtitlep">事務スキルとPR経験を両立した<br>“二刀流キャリア”</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- キャリア -->
+      <div id="portfolio" class="page">
+        <div class="content-section fade-in">
+          <h2 class="section-title">Career</h2>
+          <p class="careerbriefing">
+            金融機関での窓口業務および企業での総務・経理業務を経験。<br>
+            貯金・融資・共済など幅広い金融サービスの提案・手続きを担当し、顧客満足度向上に貢献。<br>
+            その後のキャリアでは、経理・総務業務を通じて組織運営を支えつつ、業務の電子化やコスト削減など効率化にも取り組み、経験の幅を広げる。<br>
+            また、第34代富士娘として御殿場観光イメージガールに就任し、企業・地域イベントやメディア出演の経験も有し、広報・PR面での対応力も備えている。
+          </p>
+
+          <!-- Media & Stage Appearance -->
+          <div class="portfolio-section">
+            <h3 class="portfolio-section-title">Media & Stage Appearance</h3>
+            <p class="portfolio-section-subtitle">メディア・ステージ出演実績</p>
+            
+            <div class="portfolio-grid">
+
+              <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                  <img src="assets/images/portfolio/event.jpg" alt="イベント司会">
+                </div>
+                <div class="portfolio-card-content">
+                  <h4>イベント・司会</h4>
+                  <p>企業イベント、自治体イベント</p>
+                  <ul class="achievement-list">
+                    <li>恋人の聖地モニュメント除幕式</li>
+                    <li>第35回富士娘コンテスト 認定証授与式</li>
+                    <li>クリスマスイベント＆写真撮影</li>
+                    <li>観光案内所上棟式</li>
+                    <li>幼児防火・交通安全のつどい</li>
+                    <li>熱海観光キャンペーン</li>
+                    <li>マルハンカップ表彰式</li>
+                    <li>三井住友VISA太平洋マスターズ表彰式</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                  <img src="assets/images/portfolio/model.jpg" alt="メディア出演">
+                </div>
+                <div class="portfolio-card-content">
+                  <h4>メディア出演</h4>
+                  <p>テレビ・ラジオ出演、雑誌モデル</p>
+                  <ul class="achievement-list">
+                    <li>静岡朝日テレビ「アナRUN+」出演</li>
+                    <li>広報ごてんば表紙モデル</li>
+                    <li>富士山GoGoエフエムラジオ出演</li>
+                    <li>レンブラントプレミアム富士御殿場雑誌モデル [ミクリ]</li>
+                    <li>第34代富士娘インタビューページ [広報ごてんば]</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Finance & Administrative Support -->
+          <div class="portfolio-section">
+            <h3 class="portfolio-section-title">Finance & Administrative Support</h3>
+            <p class="portfolio-section-subtitle">財務・バックオフィスサポート</p> 
+            
+            <div class="portfolio-grid">
+
+              <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                  <h4>実務領域</h4>
+                  <ul class="achievement-list">
+                    <li>請求書作成・支払処理・帳簿入力</li>
+                    <li>税務申告書類作成支援</li>
+                    <li>給与計算・社会保険手続き</li>
+                    <li>月次・年次決算サポート</li>
+                    <li>経費精算・現金管理のオンライン化</li>
+                    <li>会計ソフト導入・運用支援</li>
+                    <li>財務データ整理・分析</li>
+                    <li>業務プロセス改善・効率化</li>
+                    <li>マネープラン作成サポート</li>
+                    <li>金融商品に関する相談・提案 他</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                  <h4>資格・スキル</h4>
+                  <ul class="achievement-list">
+                    <li>電卓実務検定 １級</li>
+                    <li>ワープロ実務検定 １級</li>
+                    <li>簿記実務検定 １級</li>
+                    <li>商業経済検定 １級</li>
+                    <li>ファイナンシャル・プランニング技能士３級（個人資産相談業務）</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ギャラリー -->
+      <div id="photos" class="page">
+        <div class="content-section fade-in">
+          <h2 class="section-title">Gallery</h2>
+          
+          <div class="slideshow-container">
+            <div class="slideshow-track" id="slideshow-track"></div>
+          </div>
+
+          <div class="gallery-section">
+            <h3 class="gallery-category-title">Portrait</h3>
+            <div class="gallery-grid" data-category="tv">
+              <div class="gallery-item"><img src="assets/images/portfolio/fujimusume34th.jpg" alt="Snap 1"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/atami.jpg" alt="Snap 2"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/rembrandt 2.jpg" alt="Snap 3"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/yukata.JPG" alt="Snap 4"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/riding.HEIC" alt="Snap 5"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/marrychristmas.jpeg" alt="Snap 6"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/tourismassociation.jpg" alt="Snap 7"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/furin2.jpg" alt="Snap 8"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/snap1.JPG" alt="Snap 9"></div>
+              <div class="gallery-item"><img src="assets/images/portfolio/Gotembaofficialnewsletter.JPG" alt="Snap 10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- コンタクト -->
+      <div id="contact" class="page">
+        <div class="content-section fade-in">
+          <h2 class="section-title">Contact</h2>        
+          <div class="contact-container">
+            <div class="contact-intro">
+              <p>お仕事のご依頼・お問い合わせはこちら。お気軽にご連絡ください。</p>
+            </div>
+
+            <div class="contact-form-section">
+              <h3 class="form-title">Send Message</h3>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">お名前 / Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">メールアドレス / Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject">件名 / Subject</label>
+                  <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">メッセージ / Message</label>
+                  <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">送信 / Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+  <div class="footer-content">
+    <p>&copy;2025 Rie Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
